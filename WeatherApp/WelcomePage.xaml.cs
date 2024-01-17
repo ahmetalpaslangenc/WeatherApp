@@ -1,15 +1,18 @@
-namespace WeatherApp;
+using System;
+using Microsoft.Maui.Controls;
 
-public partial class WelcomePage : ContentPage
+namespace WeatherApp
 {
-	public WelcomePage()
-	{
-		InitializeComponent();
-	}
+    public partial class WelcomePage : ContentPage
+    {
+        public WelcomePage()
+        {
+            InitializeComponent();
+        }
 
-	private void BtnGetStarted_Clicked(object sender, Eventargs e)
-	{
-		Navigation.PushModalAsync(new WeatherPage());
-	}
-
+        private void BtnGetStarted_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushModalAsync(new WeatherPage());
+        }
+    }
 }

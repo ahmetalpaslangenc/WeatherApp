@@ -101,6 +101,5 @@ namespace WeatherApp.Models
     }
 
 
- 
 
 }
